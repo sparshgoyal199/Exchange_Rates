@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body class="body" >
+    <span id="move">
+    </span>
+    <img src="download.png" id="bg">
+    <span id="ex">Exchange Rate Calculator</span>
+    <span id="choose">Select currency and amount for exchange rate</span>
+    <img src="https://flagsapi.com/IN/flat/64.png" id="flag1">
+    <select id="sala"></select>
+
+    <button id="swap" style="pointer-events: none;" >swap</button>
+        <img src="https://flagsapi.com/US/flat/64.png" id="flag2">
+        <select id="sala2"></select>
+
+<input id="input_num" type="number" placeholder="Enter the amount" min="0" value="1" >
+<span id="result"></span>
+<script src="code.js"></script>
+<script src="index.js"></script>
+<script>
+    (() =>{
+        let all = document.querySelectorAll('select')
+        for(let k of all){
+            for(let i in countryList){            
+                let n = document.createElement('option')
+                n.value = i
+                if(CurrencyToCountry[i] != undefined){
+                    n.textContent = `${i} - ${CurrencyToCountry[i]}`
+                    k.append(n)
+                }
+            }
+        }
+    })()
+
+    document.getElementById("sala").value = "INR"
+    document.getElementById("sala2").value = "USD"
+        
+        let s = document.querySelector("#sala")
+        s.addEventListener("change",(e) =>{
+            change_flag(e.target)
+        })
+
+        let ss = document.querySelector('#sala2')
+        ss.addEventListener("change",(e) =>{
+            change_flag(e.target)
+        })
+
+        async function change_flag(tag){
+            let prev = tag.previousElementSibling
+            prev.src = await `https://flagsapi.com/${countryList[tag.value]}/flat/64.png`
+        }
+
+        let swap = document.getElementById("swap")
+        swap.addEventListener("click",name)
+
+        document.querySelector('#sala').onchange = (()=>{
+            name()
+        })
+
+        document.querySelector('#sala2').onchange = (()=>{
+            name()
+        })
+
+        document.querySelector('#input_num').oninput = (()=>{
+            name()
+        })
+
+        async function name(e){
+        let inp_curr = document.getElementById('sala').value
+        //*******as wif we write the inp_and out_curr in global scope than there value will never be get changed as when change_flag would run it will automatically change the select tag value ***//but we have already access the select tag value in our main stack (which performs first) and when side stack is running which is at last then the select tag changes but these changes will not reflect in the ino_curr and out_curr as these are in main stack
+        //**basically in saar  "document.getElementById("sala").value" accessing the value when the selected value is not changed
+
+        let out_curr = document.getElementById("sala2").value
+        let aa = await fetch(`https://api.exchangerate-api.com/v4/latest/${inp_curr}`)
+        
+        let bb
+        let c = await aa.json()
+        let ress = document.getElementById("result")
+        let change = document.getElementById("move")
+        let it = document.getElementById("input_num")
+        if(c.rates){
+            bb = c.rates[out_curr]
+            if(!it.value){
+                it.value = ''
+            }
+            if(bb){
+                let val = bb*it.value
+                ress.textContent = (val.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}))
+            }
+            else{
+            ress.textContent = `${out_curr} currency is obsoleted`
+        }}
+        else{
+            ress.textContent = `${inp_curr} is obsoleted`
+        }
+        change.textContent = `${parseInt(it.value*1).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})} ${inp_curr} = ${(bb * it.value).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})}  ${out_curr}`
+        }
+        window.onload = (() =>{document.querySelector('#swap').click()})
+
+</script>
+</script>
+</body>
+</html>

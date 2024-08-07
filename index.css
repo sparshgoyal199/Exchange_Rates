@@ -1,0 +1,1083 @@
+#bg{
+    width: 11vw;
+    height: 21vh;
+    position: absolute;
+    left: 39.7%;
+    top: 15%;
+}
+
+#ex{
+    font-size: 5vh;
+    font-weight: 700;
+    color: #7ab7aa;
+    position: absolute;
+    left: 33.5%;
+    top: 38%;
+}
+#choose{
+    font-size: 3.4vh;
+    position: absolute;
+    left: 32%;
+    top: 47.5%;
+}
+#same{
+    font-weight: 500;
+}
+#sala{
+    position: absolute;
+    left: 28.9%;
+    top: 58%;
+    width: 21vw;
+    font-size: 2.5vh;
+    border: None;
+    outline: 10px;
+    text-overflow: ellipsis;
+}
+#swap{
+    height: 4.5vh;
+    font-size: 2.4vh;
+    background-color: #7ab7aa;
+    position: absolute;
+    left: 29%;
+    top: 69%;
+    color: azure;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 1.476);
+}
+#sala2{
+    position: absolute;
+    left: 28.9%;
+    top: 81%;
+    font-size: 2.5vh;
+    width: 21vw;
+    border: none;
+    text-overflow: ellipsis;
+}
+#input_num{
+    width: 15vw;
+    font-size: 2.5vh;
+    position: absolute;
+    left: 53%;
+    top: 57.8%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 4px;
+}
+#result{
+    font-size: 3vh;
+    position: absolute;
+    left: 52.8%;
+    top: 81%;
+}
+#flag1{
+    position: absolute;
+    left: 26.5%;
+    top: 57.2%;
+    height: 4.5vh;
+    width: 2vw;
+}
+#flag2{
+    position: absolute;
+    left: 26.5%;
+    top: 80.2%;
+    height: 4.5vh;
+    width: 2vw;
+}
+#move{
+    position: absolute;
+    left: 52.5%;
+    font-size: 3vh;
+    top: 69.2%;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+#swap:hover{
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.1s;
+}
+
+#sala:hover{
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.1s;
+}
+
+#sala2:hover{
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.1s;
+}
+
+#input_num:hover{
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.1s;
+}
+
+#result:hover{
+    transform: scale(1.05);
+    transition: transform ease-in-out 0.1s;
+}
+
+@media only screen and (min-width:320px) and (max-width:728px){
+    #bg{
+        width: 25vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 12%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 15%;
+        top: 41%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 15%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+@media only screen and (max-width:375px) and  (min-height:729px){
+    #bg{
+        width: 24vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 22%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 15%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 15%;
+        top: 40.8%;
+        height: 3.4vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 15%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+@media only screen and (max-width:360px) and (max-height:728px){
+    #bg{
+        width: 25vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 12%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 15%;
+        top: 41%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 15%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+
+
+@media only screen and (max-width:344px) and (min-height:842px){
+    #bg{
+        width: 25vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 19%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 14%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 15%;
+        top: 41%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 15%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+@media only screen and (max-width:360px) and (min-height:740px){
+    #bg{
+        width: 25vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 24%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 20%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 15%;
+        top: 41%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 15%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+@media only screen and (max-width:414px) and  (min-height:896px){
+    #bg{
+        width: 25vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 23%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 20%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 14%;
+        top: 40.8%;
+        height: 3.4vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 14%;
+        top: 69.6%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+@media only screen and (max-width:375px) and  (max-height:668px){
+    #bg{
+        width: 24vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 26%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 23%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 15%;
+        top: 40.8%;
+        height: 3.4vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 15%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+
+@media only screen and (max-width:390px) and  (min-height:844px){
+    #bg{
+        width: 24vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 25%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 21%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 15%;
+        top: 40.8%;
+        height: 3.4vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 15%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+
+@media only screen and (max-width:431px) and  (min-height:931px){
+    #bg{
+        width: 24vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 24%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 21%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 14%;
+        top: 40.8%;
+        height: 3.4vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 14%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
+@media only screen and (max-width:345px) and  (min-height:881px){
+    #bg{
+        width: 24vw;
+        height: 12vh;
+        position: absolute;
+        left: 40%;
+        top: 15%;
+    }
+
+    #ex{
+        font-size: 2.5vh;
+        font-weight: 700;
+        color: #7ab7aa;
+        position: absolute;
+        left: 19%;
+        top: 30%;
+    }
+
+    #choose{
+        font-size: 1.7vh;
+        position: absolute;
+        left: 14%;
+        top: 35%;
+    }
+
+    #flag1{
+        position: absolute;
+        left: 14%;
+        top: 40.8%;
+        height: 3.4vh;
+        width: 6vw;
+    }
+
+    #sala{
+        position: absolute;
+        left: 22.6%;
+        top: 41.5%;
+        width: 40vw;
+        font-size: 1.8vh;
+        border: None;
+        outline: 10px;
+        background-color: white;
+    }
+
+    #input_num{
+        width: 17vw;
+        font-size: 1.4vh;
+        position: absolute;
+        left: 70%;
+        top: 41.5%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-left: 4px;
+    }
+
+    #sala2{
+        position: absolute;
+        left: 22.6%;
+        top: 70%;
+        font-size: 1.8vh;
+        width: 40vw;
+        background-color: white;
+        border: none;
+    }
+    #flag2{
+        position: absolute;
+        left: 14%;
+        top: 69.5%;
+        height: 3.2vh;
+        width: 6vw;
+    }
+    #result{
+        font-size: 1.6vh;
+        position: absolute;
+        left: 70%;
+        top: 70.5%;
+    }
+    #swap{
+        height: 2.6vh;
+        font-size: 1.6vh;
+        background-color: #7ab7aa;
+        position: absolute;
+        left: 20%;
+        top: 55%;
+        color: azure;
+        border-radius: 4px;
+        border-color: rgba(0, 0, 0, 1.476);
+    }
+    #move{
+        position: absolute;
+        left: 59%;
+        font-size:1.6vh;
+        top: 55.3%;
+    }
+}
+
